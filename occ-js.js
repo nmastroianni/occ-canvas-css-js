@@ -47,3 +47,17 @@ $(function () {
 ////////////////////////////////////////////////////
 // END DESIGNPLUS CONFIG                        //
 ////////////////////////////////////////////////////
+// BEGIN CUSTOM UIKIT
+
+function occLoadScript(url) {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  document.head.appendChild(script)
+}
+
+occLoadScript('https://cdn.jsdelivr.net/npm/uikit@3.24.1/dist/js/uikit.min.js')
+
+if (UIKit) UIKit.container = '.uk-scope'
+
+// END CUSTOM UIKIT
