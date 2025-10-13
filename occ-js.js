@@ -47,35 +47,39 @@ $(function () {
 ////////////////////////////////////////////////////
 // END DESIGNPLUS CONFIG                        //
 ////////////////////////////////////////////////////
-//////////////////////////////////////////////////// 
+////////////////////////////////////////////////////
 // BEGIN CUSTOM UIKIT
 ////////////////////////////////////////////////////
 function occLoadScript(url, callback) {
-  const script = document.createElement('script');
-  script.src = url;
-  script.async = true;
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
 
   script.onload = () => {
     if (typeof callback === 'function') {
-      callback();
+      callback()
     }
-  };
+  }
 
   script.onerror = () => {
-    console.error(`Failed to load script: ${url}`);
-  };
+    console.error(`Failed to load script: ${url}`)
+  }
 
-  document.head.appendChild(script);
+  document.head.appendChild(script)
 }
 
-occLoadScript('https://cdn.jsdelivr.net/npm/uikit@3.24.1/dist/js/uikit.min.js', () => {
-  if (window.UIkit) {
-    UIkit.container = '.uk-scope';
-  } else {
-    console.error('UIkit is not available after script load.');
+occLoadScript(
+  'https://cdn.jsdelivr.net/npm/uikit@3.24.1/dist/js/uikit.min.js',
+  () => {
+    if (window.UIkit) {
+      UIkit.container = '.uk-scope'
+      console.log('UIKit loaded with scope')
+    } else {
+      console.error('UIkit is not available after script load.')
+    }
   }
-});
+)
 
-//////////////////////////////////////////////////// 
+////////////////////////////////////////////////////
 // END CUSTOM UIKIT
 ////////////////////////////////////////////////////
