@@ -2,6 +2,8 @@
 
 /*********************************************************************/
 /***** BEGIN DESIGNPLUS THEME IMPORT & CUSTOMIZATION  ****************/
+/***** Changed Primary to #003767  to Blue  ****************/
+
 /*********************************************************************/
 /* Import statements need to be at the top of your CSS file */
 
@@ -12,21 +14,24 @@
 /*@import url(https://designplus.ciditools.com/css/mobile.css);*/
 
 :root {
-  --dt-color-primary: #b5121b;
-  --dt-color-primary-contrast: #ffffff;
-  --dt-color-primary-dark-text: #050505;
-  --dt-color-secondary: #003767;
-  --dt-color-secondary-contrast: #ffffff;
-  --dt-color-secondary-dark-text: #003767;
-  --dt-color-accent: #ebd9ad;
-  --dt-color-accent-contrast: #000000;
-  --dt-color-accent-dark-text: #595342;
-  --dt-color-gray: #cccccc;
-  --dt-color-gray-contrast: #000000;
-  --dt-color-gray-dark-text: #636363;
-  --dt-color-white: #ffffff;
-  --dt-color-white-contrast: #000000;
-  --dt-color-white-dark-text: #707070;
+    --dt-color-primary: #003767;
+    --dt-color-primary-contrast: #FFFFFF;
+    --dt-color-primary-dark-text: #050505;
+    --dt-color-secondary: #003767;
+    --dt-color-secondary-contrast: #FFFFFF;
+    --dt-color-secondary-dark-text: #003767;
+    --dt-color-accent: #EBD9AD;
+    --dt-color-accent-contrast: #000000;
+    --dt-color-accent-dark-text: #595342;
+    --dt-color-gray: #CCCCCC;
+    --dt-color-gray-contrast: #000000;
+    --dt-color-gray-dark-text: #636363;
+    --dt-color-white: #FFFFFF;
+    --dt-color-white-contrast: #000000;
+    --dt-color-white-dark-text: #707070;
+    --dt-color-red: #7C133A;
+    --dt-color-red-contrast: #FFFFFF;
+    --dt-color-white-dark-text: #707070;
 }
 
 /*********************************************************************/
