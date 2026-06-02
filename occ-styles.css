@@ -45,6 +45,26 @@
     :root {
         --ic-link-color: lightblue;  /* Change this color if needed */
         --ic-link-color-darkened-10: lightskyblue; /* Change this color if needed */
+        --ic-brand-primary: lightskyblue;
+        --ic-brand-font-color-dark: lightskyblue;
+    }
+    body a[class*="view-link"], a span[class*="text"] {
+        color: var(--ic-link-color) !important;
+    }
+    body, div[class*="view"] {
+        background: #0f172b;
+        color:#fff;
+    }
+    button[class*="inlineBlock-link"] {
+        color: var(--ic-link-color) !important;
+    }
+    .btn-primary:not(:disabled), .Button--primary:not(:disabled) {
+        color:#003767;
+    }
+    button:disabled {
+        color:#fff !important;
+        opacity: 0.8 !important;
+        background: #020618 !important;
     }
 }
 /**
